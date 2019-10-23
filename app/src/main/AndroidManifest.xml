@@ -11,7 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Controller.MainMenuController"></activity>
+        <activity android:name=".Controller.GameController"></activity>
+        <activity android:name=".Models.GameModel" />
+        <activity android:name=".Controller.MainMenuController" />
+        <activity android:name=".Models.ApplicationModel" />
         <activity
             android:name=".Views.LoadView"
             android:screenOrientation="landscape" />
@@ -22,7 +25,7 @@
             android:name=".Views.SaveStateView"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".Controller.GameController"
+            android:name=".Views.GameView"
             android:screenOrientation="landscape" />
         <activity
             android:name=".Views.MainMenuView"

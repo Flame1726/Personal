@@ -1,6 +1,6 @@
 package com.example.ZombieSlayer.Views;
 /**
- * This class is used as a transition from pressing Start -> GameController.
+ * This class is used as a transition from pressing Start -> GameView.
  *
  * @author Ezrie Brant
  * @author David Chan
@@ -14,7 +14,6 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ZombieSlayer.Controller.GameController;
 import com.example.ZombieSlayer.R;
 
 public class LoadView extends AppCompatActivity {
@@ -39,7 +38,7 @@ public class LoadView extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent mainIntent = new Intent(LoadView.this, GameController.class);
+                Intent mainIntent = new Intent(LoadView.this, GameView.class);
                 LoadView.this.startActivity(mainIntent);
                 LoadView.this.finish();
             }
