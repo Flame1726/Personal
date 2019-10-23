@@ -11,10 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Controller.GameController"></activity>
-        <activity android:name=".Models.GameModel" />
-        <activity android:name=".Controller.MainMenuController" />
-        <activity android:name=".Models.ApplicationModel" />
+        <activity android:name=".Controller.GameController"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Controller.MainMenuController"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Models.ApplicationModel"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".Views.LoadView"
             android:screenOrientation="landscape" />
